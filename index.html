@@ -3,50 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agro Forte: Futuro Sustentável</title>
+    <title>AgroForte: O Futuro Sustentável</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
+    <nav class="navbar">
         <div class="logo">Agro<span>Forte</span></div>
-        <nav>
-            <a href="#inicio">Início</a>
-            <a href="#equilibrio">Equilíbrio</a>
-            <a href="#tecnologias">Tecnologias</a>
-        </nav>
+        <ul class="nav-links">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#filosofia">Filosofia Científica</a></li>
+            <li><a href="#pilares">Equilíbrio Ativo</a></li>
+        </ul>
+        <button class="btn-theme" id="theme-toggle">Alternar Modo</button>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>A Ciência da Terra em Sinergia com a Produção</h1>
+            <p>Superando a dicotomia entre conservação e produtividade através da tecnologia ecossistêmica.</p>
+            <a href="#filosofia" class="btn-primary">Explore a Tese</a>
+        </div>
     </header>
 
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <h1>Futuro Sustentável</h1>
-            <p>O equilíbrio perfeito entre a força da produção e a preservação do meio ambiente.</p>
-            <button id="btnConhecer">Descubra Como</button>
+    <section id="filosofia" class="section container">
+        <div class="grid-2">
+            <div>
+                <h2>Termodinâmica da Próxima Safra</h2>
+                <p class="text-highlight">A produção moderna não pode mais ser medida apenas em sacas por hectare, mas sim pela eficiência da entropia do solo.</p>
+                <p>O conceito tradicional de agricultura foca no esgotamento e reposição química linear (NPK). A ciência contemporânea aponta para a <strong>Agricultura Sintrópica</strong> e a modelagem termodinâmica: sistemas agrícolas que geram mais energia e biodiversidade do que consomem.</p>
+                <p>Ao mimetizar a sucessão vegetal natural de florestas tropicais, conseguimos uma saturação de carbono no solo que otimiza o uso da água em até 40%, reduzindo a dependência de insumos exógenos e criando microclimas resilientes a extremos climáticos.</p>
+            </div>
+            <div class="card-visual">
+                <h3>Indicador de Resiliência</h3>
+                <div class="stat-box">
+                    <span class="stat-number" id="count1">0</span><span>%</span>
+                    <p>Eficiência hídrica em solos regenerativos regenerados via micorrizas.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="equilibrio" class="content-section">
-        <h2>Produção & Meio Ambiente</h2>
-        <p>A agricultura moderna não escolhe entre produzir ou preservar. Unindo tecnologia de ponta e respeito à biodiversidade, alimentamos o mundo enquanto protegemos o solo, a água e o futuro das próximas gerações.</p>
-    </section>
-
-    <section id="tecnologias" class="cards-section">
-        <div class="card">
-            <h3>🌱 Gestão de Solo</h3>
-            <p>Rotação de culturas e plantio direto para manter a terra fértil e viva.</p>
-        </div>
-        <div class="card">
-            <h3>💧 Gotas de Precisão</h3>
-            <p>Irrigação inteligente que reduz o desperdício de água ao mínimo necessário.</p>
-        </div>
-        <div class="card">
-            <h3>🛸 Tecnologia Campo</h3>
-            <p>Drones e sensores monitorando pragas e otimizando a produção em tempo real.</p>
+    <section id="pilares" class="section bg-light">
+        <div class="container">
+            <h2 class="center">O Equilíbrio Ativo: Três Vetores Biotecnológicos</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-icon">01</div>
+                    <h3>Biomimetismo Sistêmico</h3>
+                    <p>Desenvolvimento de maquinário e defensivos inspirados na própria mecânica de autorregulação da natureza, evitando a compactação celular do solo.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">02</div>
+                    <h3>Algoritmos de Clima</h3>
+                    <p>Utilização de IA e sensores IoT para prever flutuações de microbioma em tempo real, aplicando precisão milimétrica e abolindo o desperdício.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">03</div>
+                    <h3>Florestas de Produção</h3>
+                    <p>Integração Lavoura-Pecuária-Floresta (ILPF) baseada em dados fitossociológicos. A árvore não é barreira, é o motor biológico do pasto.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 Agro Forte Sustentável. Cultivando o amanhã.</p>
+        <p>&copy; 2026 AgroForte. Ciência, Tecnologia e Terra.</p>
     </footer>
 
     <script src="script.js"></script>
